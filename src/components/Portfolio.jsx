@@ -1,20 +1,31 @@
-import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
+import React, { useEffect } from "react";
+import entryhub from "../assets/portfolio/entryhub.png";
 import installNode from "../assets/portfolio/installNode.jpg";
 import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import tasktracker from "../assets/portfolio/tasktracker.png";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
-
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 const Portfolio = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+})
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: entryhub,
+      link: 'https://github.com/akbar909/EntryHub/tree/main/frontend',
+      Demo: 'https://entryhub.vercel.app'
     },
     {
       id: 2,
-      src: reactParallax,
+      src: tasktracker,
+      link: 'https://github.com/akbar909/TaskTrackerApp',
+      Demo: 'https://task-tracker-app-pink.vercel.app'
     },
     {
       id: 3,
@@ -40,7 +51,7 @@ const Portfolio = () => {
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white "
     >
       <div className=" p-4 pl-6 pr-4  lg:pl-28 lg:pr-28 mx-auto flex flex-col justify-center ">
-        <div className="pb-8 mt-28">
+        <div data-aos="fade-right" className="pb-8 mt-28">
           <p className="text-4xl  font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
@@ -48,20 +59,28 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+          {portfolios.map(({ id, src , link, Demo }) => (
+            <div key={id} data-aos="flip-up" className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a 
+                href={Demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                href={link}
+                target="-blank"
+                rel="noopener noreferrer"
+                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}

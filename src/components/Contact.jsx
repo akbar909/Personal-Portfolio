@@ -1,20 +1,27 @@
-import React from "react";
-
+import React, {useEffect} from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 const Contact = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+})
   return (
     <div
       name="contact"
       className=" bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
       <div className="flex flex-col p-4 lg:pl-28 lg:pr-28 justify-center mx-auto ">
-        <div className="pb-8 mt-28">
+        <div data-aos="fade-right" className="pb-8 mt-28">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
           <p className="py-6">Submit the form below to get in touch with me</p>
         </div>
 
-        <div className=" flex justify-center items-center">
+        <div data-aos="fade-up" className=" flex justify-center items-center">
           <form
             action="https://formsubmit.co/jamaliakbar909@gmail.com"
             method="POST"

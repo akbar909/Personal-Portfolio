@@ -1,20 +1,30 @@
-import React from "react";
-import HeroImage from "../assets/Akbar.png";
+import React, { useEffect } from "react";
+import HeroImage from "../assets/image.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
 
 const Home = () => {
+
+  useEffect(() => {
+      AOS.init({
+        duration: 1200,
+      });
+})
+
   return (
     <div
       name="home"
       className="bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="pl-6 pr-6 lg:pl-28 lg:pr-28 md:gap-28 mx-auto flex flex-col items-center justify-center px-4 md:flex-row">
-        <div className="flex flex-col mt-36 justify-center ">
+      <div className="pl-6 pr-6 lg:pl-28 lg:pr-28 lg:gap-48 mx-auto flex flex-col items-center justify-center px-4 md:flex-row">
+        <div data-aos="fade-right" className="flex flex-col mt-36 justify-center ">
           <h2 className="text-4xl font-bold text-white">
             I'm a Mern Stack Developer
           </h2>
-          <p className="text-gray-500 py-4 text-justify pr-4 max-w-lg">
+          <p className="text-gray-400 py-4 text-justify pr-4 max-w-lg">
             I have 3 years of MERN stack experience, specializing in responsive web applications
             with MongoDB, Express.js, React, and Node.js. I'm also proficient in Figma for
             creating intuitive and visually appealing UIs.
@@ -35,11 +45,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
+        <div data-aos="fade-left">
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto md:mt-20 lg:mt-28 w-[430px] h-[400px] lg:w-[380px] lg:h-[390px]"
+            data-aos="fade-in"
+            className="rounded-2xl mx-auto md:mt-20 lg:mt-28 w-[350px] h-[400px] lg:w-[330px] lg:h-[400px]"
           />
         </div>
       </div>
