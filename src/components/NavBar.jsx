@@ -29,8 +29,12 @@ const NavBar = () => {
       id: 4,
       link: "experience",
     },
+    // {
+    //   id: 5,
+    //   link: "resume",
+    // },
     {
-      id: 5,
+      id: 6,
       link: "contact",
     },
   ];
@@ -38,7 +42,7 @@ const NavBar = () => {
   return (
     <div className="flex z-10 justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
       <div>
-        <h1 className="text-5xl font-signature ml-2">Ghulam Akbar</h1>
+        <h1 className="lg:text-5xl text-2xl md:text-3xl font-signature ml-2">Ghulam Akbar</h1>
       </div>
 
       <ul className="hidden md:flex">

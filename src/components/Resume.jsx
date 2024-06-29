@@ -2,18 +2,22 @@ import React from 'react';
 
 function Resume() {
   return (
-    <div className="bg-gray-900 text-white p-4 pl-6 lg:pl-28 lg:pr-28">
+    <div name='resume' className="bg-gray-900 text-white p-4 pl-6 lg:pl-28 lg:pr-28">
       <h1 className="text-3xl font-bold mb-6">My Resume</h1>
 
-      <div className="flex  justify-between items-center gap-10">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
         <div>
           <h2 className="text-2xl font-bold mb-4">Experiences</h2>
-          <div className="flex items-center mb-4">
-            <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">
+          <div className=" mb-4">
+            <div className='flex items-center bg-slate-400 rounded-l-full '>
+            <div className="bg-red-500 rounded-full left-0 w-8 h-8 flex items-center justify-center mr-2">
               <span className="text-white font-bold">1</span>
             </div>
             <div>
-              <p className="font-bold">2014 - Now</p>
+              <p className="font-bold px-4 pr-10">2014 - Now</p>
+            </div>
+            </div>
+            <div>
               <p className="text-lg font-bold">Founder & Creative Director</p>
               <p className="text-gray-400">Kyros Studio</p>
               <p>
@@ -24,7 +28,7 @@ function Resume() {
               </p>
             </div>
           </div>
-          <div className="flex items-center mb-4">
+          {/* <div className="flex items-center mb-4">
             <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">
               <span className="text-white font-bold">2</span>
             </div>
@@ -55,9 +59,9 @@ function Resume() {
                 reprehenderit iste dolor.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
-        <div>
+        {/* <div>
           <h2 className="text-2xl font-bold mb-4">Education</h2>
           <div className="flex items-center mb-4">
             <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">
@@ -107,7 +111,7 @@ function Resume() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

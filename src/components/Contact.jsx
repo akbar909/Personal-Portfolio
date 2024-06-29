@@ -14,7 +14,7 @@ const Contact = () => {
       className=" bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
       <div className="flex flex-col p-4 lg:pl-28 lg:pr-28 justify-center mx-auto ">
-        <div data-aos="fade-right" className="pb-8 mt-28">
+        <div data-aos="fade-right" className="pb-8 mt-20">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
