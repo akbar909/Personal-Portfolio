@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Icons from "./components/Icons";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 import SocialLinks from "./components/SocialLinks";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Portfolio />
       <Experience />
+      <Resume />
       <Contact />
       <Icons />
       <SocialLinks />

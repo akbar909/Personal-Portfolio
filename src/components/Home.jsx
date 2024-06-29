@@ -19,7 +19,7 @@ const Home = () => {
       name="home"
       className="bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="pl-6 pr-6 lg:pl-28 lg:pr-28 lg:gap-48 mx-auto flex flex-col items-center justify-center px-4 md:flex-row">
+      <div className="pl-6 pr-6 lg:pl-28 lg:pr-28 lg:gap-48 mx-auto flex flex-col items-center justify-between px-4 md:flex-row">
         <div data-aos="fade-right" className="flex flex-col mt-36 justify-center ">
           <h2 className="text-4xl font-bold text-white">
             I'm a Mern Stack Developer
