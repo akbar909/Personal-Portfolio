@@ -10,13 +10,12 @@ import SocialLinks from "./components/SocialLinks";
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-black to-gray-800">
+    <div className="bg-black">
       <NavBar />
       <Home />
       <About />
       <Portfolio />
       <Experience />
-      {/* <Resume /> */}
       <Contact />
       <Icons />
       <SocialLinks />

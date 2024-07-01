@@ -29,10 +29,6 @@ const NavBar = () => {
       id: 4,
       link: "experience",
     },
-    // {
-    //   id: 5,
-    //   link: "resume",
-    // },
     {
       id: 6,
       link: "contact",
@@ -40,9 +36,9 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex z-10 justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="flex z-10 justify-between items-center w-full h-16 px-4 text-white bg-[#454545] fixed">
       <div>
-        <h1 className="lg:text-5xl text-2xl md:text-3xl font-signature ml-2">Ghulam Akbar</h1>
+        <h1 className="lg:text-5xl text-3xl">Ghulam Akbar</h1>
       </div>
 
       <ul className="hidden md:flex">
@@ -60,7 +56,7 @@ const NavBar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className="cursor-pointer  z-10 text-gray-300 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>

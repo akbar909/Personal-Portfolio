@@ -39,7 +39,7 @@ const SocialLinks = () => {
         <a
         href={resume}
         download
-        className="rounded-br-md flex justify-between items-center gap-9"
+        className="rounded-br-md ml-[3px] flex justify-between items-center gap-9"
       >
         Resume <BsFillPersonLinesFill size={30} />
       </a>)
