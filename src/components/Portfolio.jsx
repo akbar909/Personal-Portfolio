@@ -48,19 +48,19 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white "
+      className="text-[#E94B3CFF]/ text-[#FCF6F5FF] bg-[#2D2926FF] w-full text-white/ "
     >
       <div className=" p-4 pl-6 pr-4  lg:pl-28 lg:pr-28 mx-auto flex flex-col justify-center ">
-        <div data-aos="fade-right" className="pb-8 mt-28">
-          <p className="text-4xl  font-bold inline border-b-4 border-gray-500">
+        <div data-aos="fade-right" className="pb-8 mt-20">
+          <p className="text-4xl  font-bold inline border-b-4 border-gradient">
             Portfolio
           </p>
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3  gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src , link, Demo }) => (
-            <div key={id} data-aos="flip-up" className="shadow-md shadow-gray-600 rounded-lg">
+            <div key={id} data-aos="flip-up" className="shadow-md shadow-[#FCF6F5FF] rounded-lg">
               <img
                 src={src}
                 alt=""

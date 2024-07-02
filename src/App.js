@@ -10,7 +10,7 @@ import SocialLinks from "./components/SocialLinks";
 
 function App() {
   return (
-    <div className="bg-black">
+    <div className="bg-[#2D2926FF]">
       <NavBar />
       <Home />
       <About />

@@ -21,7 +21,7 @@ const Icons = () => {
         )}
         <a href={linkedInProfileUrl} target="_blank" rel="noopener noreferrer">
 
-          <FaLinkedin className='bg-gray-500  text-white rounded-md p-1 hover:scale-110 duration-200' />
+          <FaLinkedin className='bg-[#FCF6F5FF]  text-[#2D2926FF] rounded-md p-1 hover:scale-110 duration-200' />
         </a>
       </div>
       <div className="relative flex items-center"
@@ -35,7 +35,7 @@ const Icons = () => {
         )}
         <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
 
-          <FaGithub className='bg-gray-500  text-white rounded-md p-1 hover:scale-110 duration-200' />
+          <FaGithub className='bg-[#FCF6F5FF]  text-[#2D2926FF] rounded-md p-1 hover:scale-110 duration-200' />
         </a>
       </div>
 
@@ -49,7 +49,7 @@ const Icons = () => {
           </h1>
         )}
         <a  href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
-        <IoMailOutline className='bg-gray-500  text-white rounded-md p-1 hover:scale-110 duration-200' />
+        <IoMailOutline className='bg-[#FCF6F5FF]  text-[#2D2926FF] rounded-md p-1 hover:scale-110 duration-200' />
         </a>
       </div>
     </div>

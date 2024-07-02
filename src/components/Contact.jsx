@@ -11,11 +11,11 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className=" bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      className=" bg-[#2D2926FF] p-4 text-[#FCF6F5FF]"
     >
       <div className="flex flex-col p-4 lg:pl-28 lg:pr-28 justify-center mx-auto ">
-        <div data-aos="fade-right" className="pb-8 mt-20">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+        <div data-aos="fade-right" className="pb-8 mt-16">
+          <p className="text-4xl font-bold inline border-b-4 border-gradient">
             Contact
           </p>
           <p className="py-6">Submit the form below to get in touch with me</p>
@@ -33,24 +33,24 @@ const Contact = () => {
               name="name"
               required
               placeholder="Enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md  focus:outline-none"
             />
             <input
               type="text"
               name="email"
               required
               placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="my-4 p-2 bg-transparent border-2 rounded-md  focus:outline-none"
             />
             <textarea
               name="message"
               placeholder="Enter your message"
               rows="10"
               required
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md  focus:outline-none"
             ></textarea>
 
-            <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className="bg-gradient-to-r from-[#E94B3CFF] to-[#2D2926FF]  px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's talk
             </button>
           </form>
