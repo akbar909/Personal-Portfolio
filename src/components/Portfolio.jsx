@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import entryhub from "../assets/portfolio/entryhub.png";
 import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
 import tasktracker from "../assets/portfolio/tasktracker.png";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import socail from "../assets/portfolio/SocialMediaPosting.png"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 const Portfolio = () => {
@@ -23,13 +23,15 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: tasktracker,
-      link: 'https://github.com/akbar909/TaskTrackerApp',
-      Demo: 'https://task-tracker-app-pink.vercel.app'
+      src: socail,
+      link: 'https://github.com/akbar909/Social-media-posting-',
+      Demo: 'https://social-media-posting.vercel.app/'
     },
     {
       id: 3,
-      src: navbar,
+      src: tasktracker,
+      link: 'https://github.com/akbar909/TaskTrackerApp',
+      Demo: 'https://task-tracker-app-pink.vercel.app'
     },
     {
       id: 4,

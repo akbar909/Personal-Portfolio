@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import HeroImage from "../assets/image1.png";
+import HeroImage from "../assets/image2.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import AOS from 'aos'
@@ -20,7 +20,7 @@ const Home = () => {
       className=""
     >
       <div className="flex text-[#E94B3CFF] bg-[#2D2926FF] flex-col md:flex-row px-8 md:px-28 justify-between items-center">
-        <div data-aos="fade-right" className="mt-32 gap-4">
+        <div data-aos="fade-right" className="mt-28 gap-4">
           <h2 className="text-[#FCF6F5FF] text-2xl md:text-3xl lg:text-4xl">
             I'm a Mern Stack Developer
           </h2>

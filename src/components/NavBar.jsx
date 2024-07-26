@@ -36,7 +36,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex z-10 justify-between items-center w-full h-16 px-4 text-[#E94B3CFF] bg-[#2D2926FF] bg top-0 fixed">
+    <div className="flex z-10 justify-between items-center w-full h-16 px-8 text-[#E94B3CFF] bg-[#2D2926FF] bg top-0 fixed">
       <div>
         <h1 className="lg:text-5xl text-3xl">Ghulam Akbar</h1>
       </div>

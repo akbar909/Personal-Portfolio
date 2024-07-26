@@ -9,6 +9,7 @@ import node from "../assets/nodejs.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import figma from "../assets/figma.png";
+import mongodb from "../assets/mongodb.jpeg"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 const Experience = () => {
@@ -42,6 +43,12 @@ const Experience = () => {
       id: 4,
       src: reactImage,
       title: "React",
+      style: "shadow-blue-600",
+    },
+    {
+      id: 4,
+      src: mongodb,
+      title: "MongoDb",
       style: "shadow-blue-600",
     },
     {
