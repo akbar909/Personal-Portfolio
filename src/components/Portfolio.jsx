@@ -4,16 +4,20 @@ import installNode from "../assets/portfolio/installNode.jpg";
 import tasktracker from "../assets/portfolio/tasktracker.png";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
-import socail from "../assets/portfolio/SocialMediaPosting.png"
-import AOS from 'aos'
+import social from "../assets/portfolio/SocialMediaPosting.png";
+import AOS from 'aos';
 import 'aos/dist/aos.css';
-const Portfolio = () => {
 
+const Portfolio = () => {
   useEffect(() => {
     AOS.init({
       duration: 1500,
     });
-})
+    return () => {
+      AOS.refresh(); // Cleanup
+    };
+  }, []);
+
   const portfolios = [
     {
       id: 1,
@@ -23,7 +27,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: socail,
+      src: social,
       link: 'https://github.com/akbar909/Social-media-posting-',
       Demo: 'https://social-media-posting.vercel.app/'
     },
@@ -36,53 +40,62 @@ const Portfolio = () => {
     {
       id: 4,
       src: reactSmooth,
+      link: 'none',
+      Demo: 'none'
     },
     {
       id: 5,
       src: installNode,
+      link: 'none',
+      Demo: 'none'
     },
     {
       id: 6,
       src: reactWeather,
+      link: 'none',
+      Demo: 'none'
     },
   ];
 
   return (
-    <div
-      id="portfolio"
-      className=" text-[#FCF6F5FF] bg-[#2D2926FF] w-full"
-    >
-      <div className=" p-4 pl-6 pr-4  lg:pl-28 lg:pr-28 mx-auto flex flex-col justify-center ">
+    <div id="portfolio" className="text-[#FCF6F5FF] bg-[#2D2926FF] w-full">
+      <div className="p-4 pl-6 lg:p-28 mx-auto flex flex-col justify-center">
         <div data-aos="fade-right" className="pb-8 mt-20">
-          <p className="text-4xl  font-bold inline border-b-4 border-gradient">
+          <p className="text-4xl font-bold inline border-b-4 border-gradient">
             Portfolio
           </p>
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3  gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src , link, Demo }) => (
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-0">
+          {portfolios.map(({ id, src, link, Demo }) => (
             <div key={id} data-aos="flip-up" className="shadow-md shadow-[#FCF6F5FF] rounded-lg">
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 w-auto"
               />
               <div className="flex items-center justify-center">
-                <a 
-                href={Demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </a>
-                <a
-                href={link}
-                target="-blank"
-                rel="noopener noreferrer"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </a>
+                {Demo && (
+                  <a
+                    href={Demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
+                  >
+                    Demo
+                  </a>
+                )}
+                {link && (
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
+                  >
+                    Code
+                  </a>
+                )}
               </div>
             </div>
           ))}

@@ -1,7 +1,7 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
-import Home from "./components/Home";
+import Hero from "./components/Hero";
 import Icons from "./components/Icons";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="bg-[#2D2926FF]">
       <NavBar />
-      <Home />
+      <Hero />
       <About />
       <Portfolio />
       <Experience />
