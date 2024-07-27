@@ -42,7 +42,7 @@ const Navbar = () => {
         <div>
             <nav id="home">
                 <header className={`bg-[#2D2926FF] flex items-center justify-between px-4 lg:px-0 top-0 fixed left-0 z-50 right-0 ${sticky ? "bg-white/60 " : ""}`}>
-                    <div className="text-white lg:px-8 sm:px-0 font-bold text-xl lg:text-3xl">
+                    <div className="text-white lg:px-8 sm:px-0 font-bold text-2xl lg:text-3xl">
                         <h1 className={`p-2 ${sticky ? " text-gray-950" : " "} -z-10 ${isOpen ? "-z-20" : ""}`}>
                             Ghulam <span className="text-[#E94B3CFF]"> Akbar</span>
                         </h1>
