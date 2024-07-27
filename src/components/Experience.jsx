@@ -49,7 +49,7 @@ const Experience = () => {
       id: 4,
       src: mongodb,
       title: "MongoDb",
-      style: "shadow-blue-600",
+      style: "shadow-green-500",
     },
     {
       id: 5,
@@ -85,7 +85,7 @@ const Experience = () => {
 
   return (
     <div
-      name="experience"
+      id="experience"
       className="bg-[#2D2926FF] "
     >
       <div className=" mx-auto p-4 pl-6 lg:pl-28 lg:pr-28  flex flex-col justify-center  text-[#FCF6F5FF]">

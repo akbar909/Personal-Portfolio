@@ -49,8 +49,8 @@ const Portfolio = () => {
 
   return (
     <div
-      name="portfolio"
-      className="text-[#E94B3CFF]/ text-[#FCF6F5FF] bg-[#2D2926FF] w-full text-white/ "
+      id="portfolio"
+      className=" text-[#FCF6F5FF] bg-[#2D2926FF] w-full"
     >
       <div className=" p-4 pl-6 pr-4  lg:pl-28 lg:pr-28 mx-auto flex flex-col justify-center ">
         <div data-aos="fade-right" className="pb-8 mt-20">

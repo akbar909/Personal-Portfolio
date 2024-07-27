@@ -19,7 +19,7 @@ const Home = () => {
       name="home"
       className=""
     >
-      <div className="flex text-[#E94B3CFF] bg-[#2D2926FF] flex-col md:flex-row px-8 md:px-28 justify-between items-center">
+      <div className="text-[#E94B3CFF] bg-[#2D2926FF] grid grid-flow-row md:grid-flow-col px-8 md:px-28 justify-between items-center">
         <div data-aos="fade-right" className="mt-28 gap-4">
           <h2 className="text-[#FCF6F5FF] text-2xl md:text-3xl lg:text-4xl">
             I'm a Mern Stack Developer
@@ -59,3 +59,4 @@ const Home = () => {
 };
 
 export default Home;
+

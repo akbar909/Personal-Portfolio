@@ -13,7 +13,7 @@ const About = () => {
 })
   return (
     <div
-      name="about"
+      id="about"
       className="bg-[#2D2926FF] text-[#FCF6F5FF]"
     >
       <div className=" p-4 pl-6 lg:pl-28 lg:pr-28 pb-16  mx-auto flex flex-col justify-center ">

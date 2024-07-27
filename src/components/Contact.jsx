@@ -10,7 +10,7 @@ const Contact = () => {
 })
   return (
     <div
-      name="contact"
+      id="contact"
       className=" bg-[#2D2926FF] p-4 text-[#FCF6F5FF]"
     >
       <div className="flex flex-col p-4 lg:pl-28 lg:pr-28 justify-center mx-auto ">
@@ -50,7 +50,7 @@ const Contact = () => {
               className="p-2 bg-transparent border-2 rounded-md  focus:outline-none"
             ></textarea>
 
-            <button className="bg-gradient-to-r from-[#E94B3CFF] to-[#2D2926FF]  px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className="bg-gradient-to-r from-[#E94B3CFF] to-[#2D2926FF]  px-6 py-3 my-8 mx-auto flex items-center rounded-md duration-300">
               Let's talk
             </button>
           </form>
