@@ -41,9 +41,9 @@ const Navbar = () => {
     return (
         <div className="bg-[#2D2926FF]">
             <nav id="home">
-                <header className={`bg-[#2D2926FF] flex items-center justify-between px-4 lg:px-0 top-0 fixed left-0 z-50 right-0 ${sticky ? "bg-white/60 " : ""}`}>
-                    <div className="text-white lg:px-8 sm:px-0 font-bold text-3xl lg:text-2xl">
-                        <h1 className={`p-2 break-words ${sticky ? " text-gray-950" : " "} -z-10 ${isOpen ? "-z-20" : ""}`}>
+                <header className={`bg-[#2D2926FF] flex items-center justify-between  top-0 fixed left-0 z-50 right-0 ${sticky ? "bg-white/60 " : ""}`}>
+                    <div className="text-white px-4 lg:px-10  font-bold text-3xl lg:text-2xl">
+                        <h1 className={` py-3 lg:py-0 break-words ${sticky ? " text-gray-950" : " "} -z-10 ${isOpen ? "-z-20" : ""}`}>
                             Ghulam <span className="text-[#E94B3CFF]"> Akbar</span>
                         </h1>
                     </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
 
                     <div className="lg:hidden">
                         {!open ?
-                            (<div onClick={() => setOpen(!open)} className={`items-center flex z-30 cursor-pointer text-[#FCF6F5FF] texl top-8 ${sticky ? " text-[#FCF6F5FF]/ text-black " : ""} `}> <LineIcon /></div>) :
+                            (<div onClick={() => setOpen(!open)} className={`items-center flex z-30 cursor-pointer text-[#FCF6F5FF] px-4 top-8 ${sticky ? " text-[#FCF6F5FF]/ text-black " : ""} `}> <LineIcon /></div>) :
                             (
                                 <GiCrossMark onClick={() => setOpen(!open)} className="text-[#FCF6F5FF] cursor-pointer  right-9 md:right-8 fixed z-10" />
                             )}

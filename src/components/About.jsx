@@ -14,9 +14,9 @@ const About = () => {
   return (
     <div
       id="about"
-      className="bg-[#2D2926FF] text-[#FCF6F5FF]"
+      className="px-8 md:px-12 lg:px-28 bg-[#2D2926FF] text-[#FCF6F5FF]"
     >
-      <div className=" p-4 pl-6 lg:pl-28 lg:pr-28 pb-16  mx-auto flex flex-col justify-center ">
+      <div className=" pb-16  mx-auto flex flex-col justify-center ">
         <div data-aos="fade-right" className="pb-8 mt-20 ">
           <p  className="text-4xl font-bold inline border-b-4 border-gradient">
             About
@@ -24,7 +24,7 @@ const About = () => {
         </div>
         <div data-aos="fade-up" className='leading-6'>
 
-        <p className="md:text-xl text-[#FCF6F5FF] mt-6 text-justify pr-4">
+        <p className="md:text-xl text-[#FCF6F5FF] mt-6 text-justify">
           I am a web developer with 3 years of experience in the MERN stack: MongoDB,
           Express.js, React, and Node.js, specializing in creating responsive web applications.
           With strong skills in Figma, I design intuitive and visually appealing user
@@ -33,7 +33,7 @@ const About = () => {
 
         <br />
 
-        <p className="md:text-xl text-[#FCF6F5FF] text-justify pr-4">
+        <p className="md:text-xl text-[#FCF6F5FF] text-justify">
           Passionate about problem-solving, I continuously learn
           and stay updated with the latest trends and technologies. My portfolio
           showcases projects that reflect my expertise in both development

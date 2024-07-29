@@ -87,9 +87,9 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="bg-[#2D2926FF] "
+      className="bg-[#2D2926FF] px-8 md:px-12 lg:px-28 "
     >
-      <div className=" mx-auto p-4 pl-6 lg:pl-28 lg:pr-28  flex flex-col justify-center  text-[#FCF6F5FF]">
+      <div className=" mx-auto flex flex-col justify-center  text-[#FCF6F5FF]">
         <div data-aos="fade-right" className="mt-20 ">
         <p className="text-4xl  font-bold inline border-b-4 border-gradient">
           Experience
@@ -97,7 +97,7 @@ const Experience = () => {
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 md:px-0 lg:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
             data-aos="flip-down"
