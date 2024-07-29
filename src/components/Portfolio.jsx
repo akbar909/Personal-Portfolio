@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import entryhub from "../assets/portfolio/entryhub.png";
 import installNode from "../assets/portfolio/installNode.jpg";
 import tasktracker from "../assets/portfolio/tasktracker.png";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import social from "../assets/portfolio/SocialMediaPosting.png";
+import chatbot from "../assets/portfolio/chatbot.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,9 +12,10 @@ const Portfolio = () => {
   useEffect(() => {
     AOS.init({
       duration: 1500,
+      once : true
     });
     return () => {
-      AOS.refresh(); // Cleanup
+      AOS.refresh(); 
     };
   }, []);
 
@@ -33,15 +34,15 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: tasktracker,
-      link: 'https://github.com/akbar909/TaskTrackerApp',
-      Demo: 'https://task-tracker-app-pink.vercel.app'
+      src: chatbot,
+      link: 'https://github.com/akbar909/ChatBot',
+      Demo: 'https://chatbotalpha.vercel.app/'
     },
     {
       id: 4,
-      src: reactSmooth,
-      link: 'none',
-      Demo: 'none'
+      src: tasktracker,
+      link: 'https://github.com/akbar909/TaskTrackerApp',
+      Demo: 'https://task-tracker-app-pink.vercel.app'
     },
     {
       id: 5,

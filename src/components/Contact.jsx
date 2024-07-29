@@ -6,6 +6,7 @@ const Contact = () => {
   useEffect(() => {
     AOS.init({
       duration: 1500,
+      once : true,
     });
 })
   return (

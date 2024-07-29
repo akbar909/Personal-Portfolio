@@ -8,7 +8,7 @@ const About = () => {
   useEffect(() => {
     AOS.init({
         duration: 1500,
-        // once: true
+        once: true
     });
 })
   return (
