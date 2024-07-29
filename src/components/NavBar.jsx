@@ -6,7 +6,7 @@ const Navbar = () => {
     // const [showScrollButton, setShowScrollButton] = useState(false);
     const [isOpen] = useState(false);
     useEffect(() => {
-        // Add smooth scrolling behavior
+    
         document.documentElement.style.scrollBehavior = "smooth";
         const handleScroll = () => {
             if (window.scrollY > 0) {
@@ -39,7 +39,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div>
+        <div className="bg-[#2D2926FF]">
             <nav id="home">
                 <header className={`bg-[#2D2926FF] flex items-center justify-between px-4 lg:px-0 top-0 fixed left-0 z-50 right-0 ${sticky ? "bg-white/60 " : ""}`}>
                     <div className="text-white lg:px-8 sm:px-0 font-bold text-3xl lg:text-xl">
@@ -48,7 +48,7 @@ const Navbar = () => {
                         </h1>
                     </div>
                     <div className="hidden lg:flex">
-                        <ul className={`flex text-lg  font-semibold text-gray-900 py-3 px-4 rounded-bl-full ${sticky ? "bg-white/0 " : "bg-white"}`}>
+                        <ul className={`flex text-lg  font-semibold text-gray-900 py-2 px-4 rounded-bl-full ${sticky ? "bg-white/0 " : "bg-white"}`}>
                             {menuItems.map((items, i) => (
                                 <li key={i} className="px-6 hover:text-[#E94B3CFF]">
                                     <a href={items.link}>{items.name}</a>
@@ -60,12 +60,12 @@ const Navbar = () => {
 
                     <div className="lg:hidden">
                         {!open ?
-                            (<div onClick={() => setOpen(!open)} className={`items-center flex z-30 cursor-pointer text-[#FCF6F5FF] text-2xl top-8 ${sticky ? " text-[#FCF6F5FF]/ text-black " : ""} `}> <LineIcon /></div>) :
+                            (<div onClick={() => setOpen(!open)} className={`items-center flex z-30 cursor-pointer text-[#FCF6F5FF] texl top-8 ${sticky ? " text-[#FCF6F5FF]/ text-black " : ""} `}> <LineIcon /></div>) :
                             (
                                 <GiCrossMark onClick={() => setOpen(!open)} className="text-[#FCF6F5FF] cursor-pointer  right-9 md:right-8 fixed z-10" />
                             )}
                         <>
-                            <div className={`bg-[#2D2926FF] text-[#FCF6F5FF] top-0 right-0 fixed  w-96 h-full py-20
+                            <div className={`bg-[#2D2926FF] text-[#FCF6F5FF] top-0 right-0 fixed  w-96 h-full py-52
             ${open ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-300`}>
 
 
@@ -74,7 +74,7 @@ const Navbar = () => {
                                         <div
                                             onClick={() => setOpen(!open)}
                                             key={i}
-                                            className={`${open ? ' my-10' : 'my-10'
+                                            className={`${open ? ' my-10 ' : 'my-10'
                                                 }`}
                                         >
                                             <a href={link.link} className={`hover:text-[#E94B3CFF] duration-200

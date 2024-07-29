@@ -109,7 +109,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
             src={hero}
             alt='Hero-Image'
-            className='rounded-2xl mb-8 md:mt-20 lg:mt-28 w-[340px] h-[380px] md:w-[300px] md:h-[300px] lg:w-[330px] lg:h-[400px]'
+            className='rounded-2xl mb-8 md:mt-20 lg:mt-28 w-[340px] h-[380px] md:w-[300px] md:h-[340px] lg:w-[330px] lg:h-[400px]'
           />
         </div>
       </div>
