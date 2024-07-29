@@ -22,7 +22,7 @@ const About = () => {
             About
           </p>
         </div>
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" className='leading-6'>
 
         <p className="md:text-xl text-[#FCF6F5FF] mt-6 text-justify pr-4">
           I am a web developer with 3 years of experience in the MERN stack: MongoDB,
