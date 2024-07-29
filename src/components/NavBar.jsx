@@ -42,13 +42,13 @@ const Navbar = () => {
         <div>
             <nav id="home">
                 <header className={`bg-[#2D2926FF] flex items-center justify-between px-4 lg:px-0 top-0 fixed left-0 z-50 right-0 ${sticky ? "bg-white/60 " : ""}`}>
-                    <div className="text-white lg:px-8 sm:px-0 font-bold text-xl lg:text-3xl">
-                        <h1 className={`p-2 ${sticky ? " text-gray-950" : " "} -z-10 ${isOpen ? "-z-20" : ""}`}>
+                    <div className="text-white lg:px-8 sm:px-0 font-bold text-3xl lg:text-xl">
+                        <h1 className={`p-2 break-words ${sticky ? " text-gray-950" : " "} -z-10 ${isOpen ? "-z-20" : ""}`}>
                             Ghulam <span className="text-[#E94B3CFF]"> Akbar</span>
                         </h1>
                     </div>
                     <div className="hidden lg:flex">
-                        <ul className={`flex text-lg  font-semibold text-gray-900 py-4 px-6 rounded-bl-full ${sticky ? "bg-white/0 " : "bg-white"}`}>
+                        <ul className={`flex text-lg  font-semibold text-gray-900 py-3 px-4 rounded-bl-full ${sticky ? "bg-white/0 " : "bg-white"}`}>
                             {menuItems.map((items, i) => (
                                 <li key={i} className="px-6 hover:text-[#E94B3CFF]">
                                     <a href={items.link}>{items.name}</a>

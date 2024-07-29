@@ -59,7 +59,7 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio" className="text-[#FCF6F5FF] bg-[#2D2926FF] w-full">
-      <div className="p-4 pl-6 lg:p-28 mx-auto flex flex-col justify-center">
+      <div className="p-4 pl-6 pr-6 lg:p-28 mx-auto flex flex-col justify-center">
         <div data-aos="fade-right" className="pb-8 mt-20">
           <p className="text-4xl font-bold inline border-b-4 border-gradient">
             Portfolio

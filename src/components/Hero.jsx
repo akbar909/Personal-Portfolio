@@ -68,8 +68,8 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div className='px-8 md:px-28  bg-[#2D2926FF] mx-auto lg:py-12'>
-      <div className='flex flex-col justify-between lg:flex-row items-center'>
+    <div className='px-8 lg:px-28  bg-[#2D2926FF] mx-auto lg:py-12'>
+      <div className='flex flex-col justify-between md:flex-row gap-4 items-center'>
         <div className='lg:mt-12 mt-28 gap-4'>
         <h2 className="text-[#FCF6F5FF] text-3xl md:text-4xl lg:text-5xl">
             I'm a Mern Stack Developer
@@ -79,7 +79,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-            className=' py-4 text-justify max-w-lg  text-[#FCF6F5FF]'
+            className=' py-4 text-justify max-w-lg leading-6  text-[#FCF6F5FF]'
           >
              I have 3 years of MERN stack experience, specializing in responsive web applications
             with MongoDB, Express.js, React, and Node.js. I'm also proficient in Figma for
@@ -109,7 +109,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
             src={hero}
             alt='Hero-Image'
-            className='rounded-2xl mb-8 md:mt-20 lg:mt-28 w-[340px] h-[380px] lg:w-[330px] lg:h-[400px]'
+            className='rounded-2xl mb-8 md:mt-20 lg:mt-28 w-[340px] h-[380px] md:w-[300px] md:h-[300px] lg:w-[330px] lg:h-[400px]'
           />
         </div>
       </div>
