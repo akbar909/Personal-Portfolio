@@ -49,7 +49,7 @@ const Hero = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5,delay:0.7 }}
+            transition={{ duration: 0.5,delay:1 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
@@ -69,21 +69,15 @@ const Hero = () => {
 
 
         </div>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 },
-          }}>
+        <div
+          >
           <img
+          data-aos="fade-up"
             src={hero}
             alt='HeroImage'
             className='rounded-2xl mb-8 md:mt-20 lg:mt-28 w-[340px] h-[400px] md:w-[300px] md:h-[340px] lg:w-[330px] lg:h-[400px]'
           />
-        </motion.div>
+        </div>
       </div>
     </div>
   )
