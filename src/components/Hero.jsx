@@ -7,13 +7,12 @@ import { motion } from "framer-motion";
 import 'aos/dist/aos.css';
 
 const Hero = () => {
-
   useEffect(() => {
     AOS.init({
       duration: 1500,
       once: true
     });
-  })
+  }, []);
   return (
     <div className='px-8 md:px-12 lg:px-28  bg-[#2D2926FF] mx-auto lg:py-12'>
       <div className='flex flex-col justify-between md:flex-row gap-4 items-center'>
@@ -66,8 +65,6 @@ const Hero = () => {
               </span>
             </Link>
           </motion.div>
-
-
         </div>
         <div
           >
