@@ -35,7 +35,7 @@ const Portfolio = () => {
     {
       id: 3,
       src: chatbot,
-      link: 'https://github.com/akbar909/ChatBot',
+      link: 'https://github.com/akbar909/AiChatBot',
       Demo: 'https://chatbotalpha.vercel.app/'
     },
     {

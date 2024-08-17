@@ -73,7 +73,6 @@ const Hero = () => {
               </Link>
             </motion.div>
 
-            {/* Resume Download Button */}
             <motion.div
               initial="hidden"
               whileInView="visible"
