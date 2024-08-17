@@ -9,7 +9,7 @@ const Icons = () => {
   const [isHovered2, setIsHovered2] = useState(false);
   const email = 'jamaliakbar909@gmail.com';
   return (
-    <div className='flex flex-row justify-center gap-8 text-4xl pb-6 lg:hidden '>
+    <div className='flex flex-row justify-center gap-8 text-4xl lg:hidden '>
       <div className="relative flex items-center"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)} >
