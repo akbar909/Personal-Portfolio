@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import hero from '../assets/image2.png'
 import { Link } from "react-scroll";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { MdFileDownload } from "react-icons/md";
 import AOS from 'aos';
 import { motion } from "framer-motion";
 import 'aos/dist/aos.css';
@@ -87,11 +88,11 @@ const Hero = () => {
               <a
                 href={resume}
                 download
-                className="group lg:hidden flex items-center text-[#FCF6F5FF] w-fit px-6 py-3 rounded-lg bg-gradient-to-r from-[#E94B3CFF] to-[#2D2926FF] cursor-pointer"
+                className="lg:hidden flex items-center text-[#FCF6F5FF] w-fit px-6 py-3 rounded-lg bg-gradient-to-r from-[#E94B3CFF] to-[#2D2926FF] cursor-pointer"
               >
-                Download Resume
-                <span className="group-hover:rotate-90 duration-300">
-                  <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                Resume
+                <span>
+                  <MdFileDownload size={22} className="ml-1" />
                 </span>
               </a>
             </motion.div>
