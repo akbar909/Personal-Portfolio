@@ -25,7 +25,7 @@ const About = () => {
         <div data-aos="fade-up" className='leading-6'>
 
         <p className="md:text-xl text-[#FCF6F5FF] mt-6 text-justify">
-          I am a web developer with 3 years of experience in the MERN stack: MongoDB,
+          I am a web developer with 1 year of experience in the MERN stack: MongoDB,
           Express.js, React, and Node.js, specializing in creating responsive web applications.
           With strong skills in Figma, I design intuitive and visually appealing user
           interfaces that enhance the user experience.
