@@ -45,7 +45,7 @@ const Hero = () => {
             }}
             className='py-4 text-justify max-w-lg leading-6 text-[#FCF6F5FF]'
           >
-            I have 3 years of MERN stack experience, specializing in responsive web applications
+            I have 1 year of MERN stack experience, specializing in responsive web applications
             with MongoDB, Express.js, React, and Node.js. I'm also proficient in Figma for
             creating intuitive and visually appealing UIs.
           </motion.p>
