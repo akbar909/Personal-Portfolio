@@ -9,3 +9,10 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+// primary: '#2D2926FF',
+// secondary: '#FCF6F5FF',
+// red: '#E94B3CFF',
+
+// green: '#00ab55'

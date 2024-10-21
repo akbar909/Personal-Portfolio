@@ -26,37 +26,37 @@ const Experience = () => {
       id: 1,
       src: html,
       title: "HTML",
-      style: "shadow-orange-500",
+      style: "shadow-orange",
     },
     {
       id: 2,
       src: css,
       title: "CSS",
-      style: "shadow-blue-500",
+      style: "shadow-blue",
     },
     {
       id: 3,
       src: javascript,
       title: "JavaScript",
-      style: "shadow-yellow-500",
+      style: "shadow-yellow",
     },
     {
       id: 4,
       src: reactImage,
       title: "React",
-      style: "shadow-blue-600",
+      style: "shadow-blueDark",
     },
     {
       id: 4,
       src: mongodb,
       title: "MongoDb",
-      style: "shadow-green-500",
+      style: "shadow-green",
     },
     {
       id: 5,
       src: tailwind,
-      title: "Tailwind",
-      style: "shadow-sky-400",
+      title: "Tailwind CSS",
+      style: "shadow-sky",
     },
     {
       id: 6,
@@ -68,31 +68,31 @@ const Experience = () => {
       id: 7,
       src: node,
       title: "Node Js",
-      style: "shadow-green-400",
+      style: "shadow-greenLight",
     },
     {
       id: 8,
       src: github,
       title: "GitHub",
-      style: "shadow-gray-400",
+      style: "shadow-gray",
     },
     {
       id: 8,
       src: figma,
       title: "Figma",
-      style: "shadow-gray-400",
+      style: "shadow-gray",
     },
   ];
 
   return (
     <div
-      id="experience"
-      className="bg-[#2D2926FF] px-8 md:px-12 lg:px-28 "
+      id="skills"
+      className="container mx-auto bg-primary px-8 md:px-12 lg:px-28 "
     >
-      <div className=" mx-auto flex flex-col justify-center  text-[#FCF6F5FF]">
+      <div className=" mx-auto flex flex-col justify-center  text-secondary">
         <div data-aos="fade-right" className="mt-20 ">
         <p className="text-4xl  font-bold inline border-b-4 border-gradient">
-          Experience
+          Skills
           </p>
           <p className="py-6">These are the technologies I've worked with</p>
         </div>

@@ -3,54 +3,64 @@ import { GiCrossMark } from "react-icons/gi";
 import LineIcon from "./LineIcon";
 const Navbar = () => {
     const [sticky, setSticky] = useState(false);
-    // const [showScrollButton, setShowScrollButton] = useState(false);
+    const [showScrollButton, setShowScrollButton] = useState(false);
     const [isOpen] = useState(false);
+
     useEffect(() => {
-    
+
         document.documentElement.style.scrollBehavior = "smooth";
         const handleScroll = () => {
             if (window.scrollY > 0) {
                 setSticky(true);
-                // setShowScrollButton(true);
             } else {
                 setSticky(false);
-                // setShowScrollButton(false);
+
+            }
+        }
+        const handleScroll1 = () => {
+            if (window.scrollY > 500) {
+                setShowScrollButton(true);
+            } else {
+                setShowScrollButton(false);
             }
         }
         window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll1);
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scroll", handleScroll1);
             document.documentElement.style.scrollBehavior = "auto";
         };
     }, []);
 
-    // const scrollToTop = () => {
-    //     window.scrollTo({ top: 0, behavior: "smooth" });
-    // };
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
 
     const menuItems = [
         { name: "Home", link: "#home" },
         { name: "About", link: "#about" },
+        { name: "Resume", link: "#resume" },
         { name: "Portfolio", link: "#portfolio" },
-        { name: "Experience", link: "#experience" },
+        { name: "Skills", link: "#skills" },
         { name: "Contact", link: "#contact" },
     ];
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="bg-[#2D2926FF]">
+        <div className="bg-primary ">
             <nav id="home">
-                <header className={`bg-[#2D2926FF] flex items-center justify-between  top-0 fixed left-0 z-50 right-0 ${sticky ? "bg-white/60 " : ""}`}>
-                    <div className="text-white px-8 lg:px-10  font-bold text-3xl lg:text-2xl">
-                        <h1 className={` py-3 lg:py-0 break-words ${sticky ? " text-gray-950" : " "} -z-10 ${isOpen ? "-z-20" : ""}`}>
-                            Ghulam <span className="text-[#E94B3CFF]"> Akbar</span>
+                <header className={`bg-primary flex items-center justify-between top-0 fixed left-0 z-50 right-0 ${sticky ? "bg-secondary/80 " : ""}`}>
+                    <div className=" px-8 lg:px-10  font-bold text-3xl lg:text-2xl">
+                        <h1 className={` py-3 lg:py-0 break-words ${sticky ? " text-primary" : "text-secondary "} -z-10 ${isOpen ? "-z-20" : ""}`}>
+                            Ghulam <span className="text-red"> Akbar</span>
                         </h1>
                     </div>
                     <div className="hidden lg:flex">
-                        <ul className={`flex text-lg  font-semibold text-gray-900 py-3 px-4 rounded-bl-full ${sticky ? "bg-white/0 " : "bg-white"}`}>
+                        <ul className={`flex text-lg  font-semibold text-primary py-3 px-4 rounded-bl-full ${sticky ? "bg-secondary/0 " : "bg-secondary"}`}>
                             {menuItems.map((items, i) => (
-                                <li key={i} className="px-6 hover:text-[#E94B3CFF]">
+                                <li key={i} className="px-4 hover:text-red">
                                     <a href={items.link}>{items.name}</a>
                                 </li>
                             ))}
@@ -60,12 +70,12 @@ const Navbar = () => {
 
                     <div className="lg:hidden">
                         {!open ?
-                            (<div onClick={() => setOpen(!open)} className={`items-center flex z-30 cursor-pointer text-[#FCF6F5FF] px-8 top-8 ${sticky ? " text-[#FCF6F5FF]/ text-black " : ""} `}> <LineIcon /></div>) :
+                            (<div onClick={() => setOpen(!open)} className={`items-center flex z-30 cursor-pointer  px-8 top-8 ${sticky ? "  text-primary " : "text-secondary"} `}> <LineIcon /></div>) :
                             (
-                                <GiCrossMark onClick={() => setOpen(!open)} className="text-[#FCF6F5FF] cursor-pointer  right-9 md:right-8 fixed z-10" />
+                                <GiCrossMark onClick={() => setOpen(!open)} className="text-secondary cursor-pointer  right-9 md:right-8 fixed z-10" />
                             )}
                         <>
-                            <div className={`bg-[#2D2926FF] text-[#FCF6F5FF] top-0 right-0 fixed  w-96 h-full py-52
+                            <div className={`bg-primary  text-secondary top-0 right-0 fixed  w-96 h-full py-32
             ${open ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-300`}>
 
 
@@ -77,7 +87,7 @@ const Navbar = () => {
                                             className={`${open ? ' my-10 ' : 'my-10'
                                                 }`}
                                         >
-                                            <a href={link.link} className={`hover:text-[#E94B3CFF] duration-200
+                                            <a href={link.link} className={`hover:text-red duration-200
                                         ${open ? 'text-gray-950 font-extrabold flex flex-col items-center ' : 'text-gray-950 flex flex-col items-center'}`}>{link.name}</a>
                                         </div>
                                     ))
@@ -89,14 +99,14 @@ const Navbar = () => {
 
 
             </nav>
-            {/* {showScrollButton && (
-                <div className={`fixed bottom-10 right-10 bg-gray-600 animate-bounce px-4 py-2 font-extrabold text-2xl rounded-full cursor-pointer text-cyan-500 ${sticky ? "opacity-100" : "opacity-0"
+            {showScrollButton && (
+                <div className={`fixed bottom-10 right-10 bg-secondary z-10 border-2 border-red px-3 py-1  font-extrabold text-2xl rounded-full cursor-pointer text-cyan-500 ${sticky ? "opacity-100" : "opacity-0"
                     } transition-opacity duration-500`} onClick={scrollToTop}>
                     ^
                 </div>
             )
 
-            } */}
+            }
 
         </div>
     )

@@ -1,120 +1,113 @@
-import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
-function Resume() {
+export default function Resume() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  }, []);
+
+
   return (
-    <div name='resume' className="bg-gray-900 text-white p-4 pl-6 lg:pl-28 lg:pr-28">
-      <h1 className="text-3xl font-bold mb-6">My Resume</h1>
-
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
-        <div>
-          <h2 className="text-2xl font-bold mb-4">Experiences</h2>
-          <div className=" mb-4">
-            <div className='flex items-center bg-slate-400 rounded-l-full '>
-            <div className="bg-red-500 rounded-full left-0 w-8 h-8 flex items-center justify-center mr-2">
-              <span className="text-white font-bold">1</span>
-            </div>
-            <div>
-              <p className="font-bold px-4 pr-10">2014 - Now</p>
-            </div>
-            </div>
-            <div>
-              <p className="text-lg font-bold">Founder & Creative Director</p>
-              <p className="text-gray-400">Kyros Studio</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                tempora perferendis vero officia enim impedit voluptatem
-                dignissimos, veniam ratione est alias rerum aperiam, nam aliquam
-                reprehenderit iste dolor.
-              </p>
-            </div>
-          </div>
-          {/* <div className="flex items-center mb-4">
-            <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">
-              <span className="text-white font-bold">2</span>
-            </div>
-            <div>
-              <p className="font-bold">2010 - 2014</p>
-              <p className="text-lg font-bold">Senior UI / UX Designer</p>
-              <p className="text-gray-400">Google Inc</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                tempora perferendis vero officia enim impedit voluptatem
-                dignissimos, veniam ratione est alias rerum aperiam, nam aliquam
-                reprehenderit iste dolor.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center mb-4">
-            <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">
-              <span className="text-white font-bold">3</span>
-            </div>
-            <div>
-              <p className="font-bold">2008 - 2010</p>
-              <p className="text-lg font-bold">Graphic Designer</p>
-              <p className="text-gray-400">Kyros Studio</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                tempora perferendis vero officia enim impedit voluptatem
-                dignissimos, veniam ratione est alias rerum aperiam, nam aliquam
-                reprehenderit iste dolor.
-              </p>
-            </div>
-          </div> */}
+    <div id="resume" className="container mx-auto  bg-primary text-secondary py-1  px-8 md:px-12 lg:px-28">
+       <div className="pb-8 mt-20 " data-aos="fade-right">
+          <p  className="text-4xl font-bold inline border-b-4 border-gradient">
+           My Resume
+          </p>
         </div>
-        {/* <div>
-          <h2 className="text-2xl font-bold mb-4">Education</h2>
-          <div className="flex items-center mb-4">
-            <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">
-              <span className="text-white font-bold">1</span>
-            </div>
-            <div>
-              <p className="font-bold">2004 - 2008</p>
-              <p className="text-lg font-bold">Master in Design</p>
-              <p className="text-gray-400">New York University</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                tempora perferendis vero officia enim impedit voluptatem
-                dignissimos, veniam ratione est alias rerum aperiam, nam aliquam
-                reprehenderit iste dolor.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center mb-4">
-            <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">
-              <span className="text-white font-bold">2</span>
-            </div>
-            <div>
-              <p className="font-bold">2004 - 2008</p>
-              <p className="text-lg font-bold">Bachelor of Arts</p>
-              <p className="text-gray-400">University of London</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                tempora perferendis vero officia enim impedit voluptatem
-                dignissimos, veniam ratione est alias rerum aperiam, nam aliquam
-                reprehenderit iste dolor.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center mb-4">
-            <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">
-              <span className="text-white font-bold">3</span>
-            </div>
-            <div>
-              <p className="font-bold">2006 - 2004</p>
-              <p className="text-lg font-bold">Artist of College</p>
-              <p className="text-gray-400">University of Sydney</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                tempora perferendis vero officia enim impedit voluptatem
-                dignissimos, veniam ratione est alias rerum aperiam, nam aliquam
-                reprehenderit iste dolor.
-              </p>
-            </div>
-          </div>
-        </div> */}
+      <div className="max-w-full mt-4 mx-auto  grid justify-between  grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-32">
+        
+        <div data-aos="fade-up">
+          <h2 className="text-2xl font-bold mb-6">EDUCATION</h2>
+          <Timeline items={educationData} />
+        </div>
+        <div data-aos="fade-up">
+          <h2 className="text-2xl font-bold mb-6">EXPERIENCE</h2>
+          <Timeline items={experienceData} />
+        </div>
       </div>
     </div>
   );
 }
 
-export default Resume;
+function Timeline({ items }) {
+  return (
+    <div className="space-y-8 ">
+      {items.map((item, index) => (
+        <div key={index} className="relative gap-6 px-8 md:px-12 lg:px-16">
+          
+          <div>
+          <div className="absolute -left-[5px] -top-1  w-3 h-3 bg-primary border-2 border-red rounded-full"></div>
+          <div className="absolute left-0 top-3 h-full w-0.5 bg-red"></div>
+          </div>
+          <div className="">
+          <div className="mb-1 text-sm">{item.date}</div>
+          <h3 className="text-xl font-semibold mb-1">{item.title}</h3>
+          <div className="text-gray-400 mb-1">{item.location}</div>
+          <p className="text-sm text-gray-300">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+const educationData = [
+  {
+    date: "2018 - 2020",
+    title: "Matriculation | Govt: High School District Matiari",
+    location: "Matiari, Pakistan",
+    description: "I completed my Matriculation degree from Govt: High School Matiari, Pakistan.",
+  },
+  {
+    date: "2020 - 2022",
+    title: "Intermediate | Govt: Sarwari Islamia Degree College Hala",
+    location: "Hala, Pakistan",
+    description: "I completed my Intermediate degree from Govt: S.I College Hala, Pakistan.",
+  },
+  {
+    date: "2022 - 2026 (Expected)",
+    title: "BE Computer Systems Engineering | MUET Jamshoro",
+    location: "Jamshoro, Pakistan",
+    description: "I am pursuing my Bachelor's degree in Computer Systems Engineering from MUET Jamshoro, Pakistan.",
+  },
+  {
+    date: "Nov 2023 - Jan 2024",
+    title: "MERN Stack Development | IBA IT Bootcamp Program",
+    location: "Hyderabad, Pakistan",
+    description: "I completed this course from the IBA IT Bootcamp program in Hyderabad, Pakistan.",
+  },
+];
+
+
+const experienceData = [
+  {
+    date: "Nov 2023 - Dec 2023",
+    title: "Web Development Intern | CodSoft",
+    location: "Remote",
+    description: "Built responsive, pixel-perfect websites with a focus on user experience.",
+  },
+  {
+    date: "Jan 2024 - Feb 2024",
+    title: "React JS Intern | CodSoft",
+    location: "Remote",
+    description: "Developed dynamic, responsive web applications using React JS.",
+  },
+  {
+    date: "Mar 2024 - Oct 2024",
+    title: "Web Developer & Code Captain | D3 - Digital Dream Dynamo",
+    location: "Jamshoro, Pakistan",
+    description: "Managed the website and led the development team to deliver scalable solutions.",
+  },
+  {
+    date: "Sept 2024 - Present",
+    title: "MERN Intern | ThinkFeat Software House",
+    location: "Hyderabad, Pakistan",
+    description: "Built responsive, cross-browser web apps and collaborated on reusable components.",
+  },
+];
+

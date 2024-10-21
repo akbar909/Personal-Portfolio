@@ -11,18 +11,18 @@ const Icons = () => {
       <div className=" flex items-center">
         <a href={linkedInProfileUrl} target="_blank" rel="noopener noreferrer">
 
-          <FaLinkedin className='bg-[#FCF6F5FF]  text-[#2D2926FF] rounded-md p-1 hover:scale-110 duration-200' />
+          <FaLinkedin className='bg-secondary  text-primary rounded-md p-1 hover:scale-110 duration-200' />
         </a>
       </div>
       <div className="relative flex items-center">
         <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
 
-          <FaGithub className='bg-[#FCF6F5FF]  text-[#2D2926FF] rounded-md p-1 hover:scale-110 duration-200' />
+          <FaGithub className='bg-secondary  text-primary rounded-md p-1 hover:scale-110 duration-200' />
         </a>
       </div>
       <div className="flex items-center">
         <a  href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
-        <IoMailOutline className='bg-[#FCF6F5FF]  text-[#2D2926FF] rounded-md p-1 hover:scale-110 duration-200' />
+        <IoMailOutline className='bg-secondary  text-primary rounded-md p-1 hover:scale-110 duration-200' />
         </a>
       </div>
     </div>

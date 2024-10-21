@@ -16,8 +16,23 @@
   font-style: normal;
 }
 
-.border-gradient {
-  border-bottom: 4px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #E94B3CFF, #2D2926FF);
+@layer utilities{
+  .border-gradient {
+    border-bottom: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #E94B3CFF, #2D2926FF);
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #E94B3CFF #2D2926FF; /* Red thumb, Primary track */
+}
+
+.glowing-text {
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 
+               0 0 10px rgba(255, 0, 0, 0.6), 
+               0 0 15px rgba(255, 0, 0, 0.6),
+               0 0 20px rgba(255, 0, 0, 1);
+  color: #dedada;
 }
