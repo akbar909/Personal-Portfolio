@@ -5,6 +5,8 @@ import tasktracker from "../assets/portfolio/tasktracker.png";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import social from "../assets/portfolio/SocialMediaPosting.png";
 import chatbot from "../assets/portfolio/chatbot.png";
+import ecom from '../assets/portfolio/ecom.png'
+import recipe from "../assets/portfolio/recipe.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -22,40 +24,41 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      src: ecom,
+      link: 'https://github.com/akbar909/skbFrontend',
+      Demo: 'https://sk-bukhari.vercel.app/shop/home',
+    },
+    {
+      id: 2,
       src: entryhub,
       link: 'https://github.com/akbar909/EntryHub/tree/main/frontend',
       Demo: 'https://entryhub.vercel.app',
     },
     {
-      id: 2,
+      id: 3,
       src: social,
       link: 'https://github.com/akbar909/Social-media-posting-',
       Demo: 'https://social-media-posting.vercel.app/',
     },
     {
-      id: 3,
+      id: 4,
       src: chatbot,
       link: 'https://github.com/akbar909/AiChatBot',
       Demo: 'https://chatbotalpha.vercel.app/',
     },
     {
-      id: 4,
+      id: 5,
+      src: recipe,
+      link: 'https://github.com/akbar909/Recipe-Sharing-Frontend',
+      Demo: 'https://recipe-sharing-frontend.vercel.app/',
+    },
+    {
+      id: 6,
       src: tasktracker,
       link: 'https://github.com/akbar909/TaskTrackerApp',
       Demo: 'https://task-tracker-app-pink.vercel.app',
     },
-    {
-      id: 5,
-      src: installNode,
-      link: 'none',
-      Demo: 'none',
-    },
-    {
-      id: 6,
-      src: reactWeather,
-      link: 'none',
-      Demo: 'none',
-    },
+  
   ];
 
   return (

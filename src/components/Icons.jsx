@@ -7,7 +7,7 @@ const Icons = () => {
   const gitHubLink = 'https://github.com/akbar909'
   const email = 'jamaliakbar909@gmail.com';
   return (
-    <div className='flex flex-row justify-center gap-8 text-4xl lg:hidden '>
+    <div className='flex flex-wrap justify-center gap-8 text-4xl lg:hidden '>
       <div className=" flex items-center">
         <a href={linkedInProfileUrl} target="_blank" rel="noopener noreferrer">
 
