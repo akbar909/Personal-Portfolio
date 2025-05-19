@@ -104,8 +104,8 @@ const experienceData = [
     description: "Managed the website and led the development team to deliver scalable solutions.",
   },
   {
-    date: "Sept 2024 - Present",
-    title: "MERN Intern | ThinkFeat Software House",
+    date: "Sept 2024 - Feb 2025",
+    title: "MERN STACK & NEXT JS Intern | ThinkFeat Software House",
     location: "Hyderabad, Pakistan",
     description: "Built responsive, cross-browser web apps and collaborated on reusable components.",
   },

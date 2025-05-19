@@ -10,6 +10,8 @@ import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import figma from "../assets/figma.png";
 import mongodb from "../assets/mongodb.jpeg"
+import typescript from "../assets/typescript.png"
+import git from "../assets/git.png"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 const Experience = () => {
@@ -23,28 +25,10 @@ const Experience = () => {
 
   const techs = [
     {
-      id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange",
-    },
-    {
-      id: 2,
-      src: css,
-      title: "CSS",
-      style: "shadow-blue",
-    },
-    {
-      id: 3,
-      src: javascript,
-      title: "JavaScript",
-      style: "shadow-yellow",
-    },
-    {
       id: 4,
       src: reactImage,
       title: "React",
-      style: "shadow-blueDark",
+      style: "shadow-sky",
     },
     {
       id: 4,
@@ -65,6 +49,31 @@ const Experience = () => {
       style: "shadow-white",
     },
     {
+      id: 1,
+      src: typescript,
+      title: "TypeScript",
+      style: "shadow-blue",
+      
+    },
+    {
+      id: 1,
+      src: html,
+      title: "HTML",
+      style: "shadow-orange",
+    },
+    {
+      id: 2,
+      src: css,
+      title: "CSS",
+      style: "shadow-blue",
+    },
+    {
+      id: 3,
+      src: javascript,
+      title: "JavaScript",
+      style: "shadow-yellow",
+    },
+    {
       id: 7,
       src: node,
       title: "Node Js",
@@ -81,6 +90,13 @@ const Experience = () => {
       src: figma,
       title: "Figma",
       style: "shadow-gray",
+    },
+    {
+      id: 8,
+      src: git,
+      title: "Git",
+      style: "shadow-red",
+  
     },
   ];
 
