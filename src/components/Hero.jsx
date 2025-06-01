@@ -96,7 +96,7 @@ const Hero = () => {
               className='hidden lg:flex items-center'
             >
               <Link
-                to="portfolio"
+                to="project"
                 smooth
                 duration={500}
                 className="group flex items-center text-secondary w-fit px-6 py-3 rounded-lg bg-gradient-to-r from-red to-primary cursor-pointer"
