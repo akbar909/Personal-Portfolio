@@ -1,14 +1,13 @@
-import AOS from 'aos';
-import React, { useEffect } from 'react';
+import AOS from "aos";
+import React, { useEffect } from "react";
 
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 const About = () => {
-
   useEffect(() => {
     AOS.init({
       duration: 1500,
-      once: true
+      once: true,
     });
     // AdSense push (script already in index.html)
     if (window.adsbygoogle && Array.isArray(window.adsbygoogle)) {
@@ -26,26 +25,31 @@ const About = () => {
             About
           </p>
         </div>
-        <div data-aos="fade-up" className='leading-6'>
+        <div data-aos="fade-up" className="leading-6">
           <p className="md:text-xl text-secondary mt-6 text-justify">
-            As a web developer with a year of hands-on experience in the MERN stack—MongoDB,
-            Express.js, React, and Node.js specialize in building dynamic, responsive web
-            applications that offer seamless user experiences. My expertise extends to crafting
-            visually compelling and user-friendly interfaces through Figma, ensuring that both form
-            and function are meticulously balanced. </p>
+            I’m a Web Developer with over a year of hands-on experience in the
+            MERN stack—MongoDB, Express.js, React.js, and Node.js—along with
+            Next.js for building fast, SEO-friendly web applications. I
+            specialize in creating dynamic and responsive web solutions that
+            provide seamless user experiences, combining clean backend logic
+            with smooth frontend interactions.{" "}
+          </p>
           <br />
           <p className="md:text-xl text-secondary text-justify">
-            Driven by a passion for problem-solving, I am committed to continuous learning
-            and staying at the forefront of emerging technologies. My portfolio reflects my
-            dual strengths in development and design, showcasing projects that not only highlight
-            my technical proficiency but also my dedication to delivering polished,
-            high-quality digital solutions. </p>
+            With a strong eye for design, I use Figma to craft intuitive UI/UX
+            designs and bring them to life using Tailwind CSS and modern
+            frontend practices. My work reflects a balance between performance
+            and aesthetics, and I’m passionate about building high-quality,
+            production-ready applications. I’m always exploring new technologies
+            and continuously improving my skills to stay ahead in the
+            ever-evolving world of web development.{" "}
+          </p>
         </div>
       </div>
 
       {/* Ad Section */}
-      <div className="my-8 flex justify-center bg-secondary">
-        {/* Google AdSense Horizontal Ad */}
+      {/* <div className="my-8 flex justify-center bg-secondary">
+    
         <ins
           className="adsbygoogle"
           style={{ display: 'inline-block', width: '728px', height: '90px' }}
@@ -54,7 +58,7 @@ const About = () => {
           data-ad-format="horizontal"
           data-full-width-responsive="true"
         ></ins>
-      </div>
+      </div> */}
     </div>
   );
 };

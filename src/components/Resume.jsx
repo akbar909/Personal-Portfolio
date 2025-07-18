@@ -86,28 +86,28 @@ const educationData = [
 
 const experienceData = [
   {
-    date: "Nov 2023 - Dec 2023",
-    title: "Web Development Intern | CodSoft",
-    location: "Remote",
-    description: "Built responsive, pixel-perfect websites with a focus on user experience.",
-  },
-  {
-    date: "Jan 2024 - Feb 2024",
-    title: "React JS Intern | CodSoft",
-    location: "Remote",
-    description: "Developed dynamic, responsive web applications using React JS.",
-  },
-  {
     date: "Mar 2024 - Oct 2024",
-    title: "Web Developer & Code Captain | D3 - Digital Dream Dynamo",
+    title: "Web Developer | D3 - Digital Dream Dynamo",
     location: "Jamshoro, Pakistan",
-    description: "Managed the website and led the development team to deliver scalable solutions.",
+    description: "Built responsive, pixel-perfect websites with a focus on user experience.",
   },
   {
     date: "Sept 2024 - Feb 2025",
     title: "MERN STACK & NEXT JS Intern | ThinkFeat Software House",
     location: "Hyderabad, Pakistan",
     description: "Built responsive, cross-browser web apps and collaborated on reusable components.",
+  },
+  {
+    date: "Apr 2025 - May 2025",
+    title: "Web Developer Intern | PEF - Pakistan Engineers Forum",
+    location: "Remote",
+    description: "Contributed to the development of web applications, focusing on performance and scalability.",
+  },
+  {
+    date: "June 2025 - July 2025",
+    title: "Full Stack Developer | Verior",
+    location: "Hyderabad, Pakistan",
+    description: "Developed and maintained full-stack applications, ensuring high performance and responsiveness.",
   },
 ];
 

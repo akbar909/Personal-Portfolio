@@ -6,7 +6,7 @@ import AOS from 'aos';
 import { motion } from "framer-motion";
 import 'aos/dist/aos.css';
 import Icons from './Icons';
-import resume from '../assets/AkbarResume.pdf';
+import resume from '../assets/Ghulam_Akbar1.pdf';
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
